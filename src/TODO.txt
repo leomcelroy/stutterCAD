@@ -1,0 +1,110 @@
+-------Higher Priority-------
+-Numerical inputs for transformations
+-Offsets
+-Undo/Redo
+-Drag pivot point
+-Tangent
+-Coincident with Line or Arc
+-Midpoint
+-Mirror with clones
+-Fillet
+-Trim
+-Set specific angle
+-Automatic Constraints
+-Add Better Handling of Constraint Inputs
+  -Clones and ControlPoints shouldn't have constraints added
+-Parameter checks on all input boxes
+-If tool is in use then on change end all operations and make ready for next tool
+-Copy and clone beziers, arcs, circles (currently only does lines and points)
+-Finish esc and enter drawing edits
+-Redo constraint solver like solvespace
+-Console Contents
+  -Unmet constraints
+  -Numerical inputs for transformations
+  -Constraint Inputs
+  -Errors in input values
+
+-------Medium Priority-------
+-Vectorize BitMap
+-Symmetric
+-Mirror (Makes New Curves/Lines with Constraits)
+-Display progenitor of clones on select or highlight (like constraints)
+-Import Image
+-Add external variables for dimensions
+-Ellipses
+-Add/remove points from Beziers
+-Repeat (circular or rectangular pattern)
+
+-------Lower Priority-------
+-Save DXFs
+-Multiple Pastes
+-Slot
+-Offset
+-Coincident with curve
+-Horizontal Distance
+-Vertical Distance
+-Extend
+-Split at Intersection
+-Pierce
+-Normal
+-Adjust lambda in lm
+-Add command search triggered by space bar
+-Guide line
+-Rulers on sides
+
+-------Other Decisions-------
+-Hiding constraint display when transforming is not the most elegant way to handle all those temporarily unmet constraints
+-Choose which matrix library is fastest
+-Decide whether to use old parsing method or new one
+-Improve UI, (Change away from Svg-React-Pan-Zoom)
+-Refactor Code
+-Don't edit points directly in direct transformations
+-Should progenitors change of clones of directly transformed shapes
+
+-------BUGS-------
+-Constraints of lower level points (coincident points that are buried) are not visible
+-Circle constraint is insufficient
+-Reset makes hotkeys not work
+-Dragging line and co-linear point makes it crash
+-Tool changes mid-use can F*** stuff up
+
+-------Remember-------
+-Onshape, solvespace, jsketcher, and fusion360 parametric capabilities
+-vectr, gravit, svgEdit for drawing capabilities
+
+-------DONE-------
+-Bezier control point switch while adding
+-Copy and Paste (with constraints)
+-Save and Upload (Upload needs to maintain shapes and constraints)
+-Transform (Translate (x or y), Rotate, Scale (x or y))
+-Fix issue with hover stuck on, maybe put the highlight thing in the group (Did it with that mouseUp hack. A better solution would be desirable)
+-Circles
+-Selection for beziers, arcs, circles
+-Make Construction Line
+-Delete clones of directly transformed shapes (or should prog change)
+-Remove constraints from shapes destroyed by transform (clean up should be unified with delete clean up)
+-Clone
+-Rectangles
+-Arcs
+-Add Selection Boxes
+-Resize workpieceSize
+-Export (SVG or PDF)
+-Delete lines that are missing points
+-Issue with selection and losing focus (!) (was because this.state.shapes was being mutated by sort)
+-Add ability to switch joint type on bezier points (do it while drawing too) (symmetric/disconnected)
+-Equal
+-Prevent constraints from going to zero
+-remove unneeded variables before solving
+-Beziers
+-bezier points have an edit mode when control points are visible and selectable
+-make known things to points in update function
+-make only visible and selectable when controlled is selected
+-make beziers grouped
+-make pointIDs random 32 bit strings
+-want bezier control point pairs stored together
+-need to access controls of bezier point and pair of control points
+-control points can't be constrained
+-when bezier points are moved so are control points
+-how to close single stroke bezier?
+-make it so control points don't change?
+-add partner control point

@@ -1,0 +1,35 @@
+{
+  "name": "705",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@tensorflow/tfjs": "^0.12.4",
+    "ajv": "^6.5.2",
+    "cwise": "^1.0.10",
+    "esprima": "^4.0.0",
+    "jsfeat": "0.0.8",
+    "linear-algebra": "^3.1.4",
+    "linear-solve": "^1.2.1",
+    "nblas": "^1.2.2",
+    "ndarray": "^1.0.18",
+    "ndarray-linear-solve": "^3.0.0",
+    "ndarray-lup-factorization": "^3.0.3",
+    "ndarray-lup-solve": "^1.1.0",
+    "ndarray-scratch": "^1.2.0",
+    "numericjs": "^1.2.6",
+    "numjs": "^0.16.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "^1.1.4",
+    "react-svg-pan-zoom": "^2.16.1",
+    "svg-pan-zoom": "^3.5.3",
+    "sylvester": "0.0.21",
+    "vectorious": "^4.8.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
