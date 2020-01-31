@@ -25,7 +25,7 @@ function clone(context) { //copies selected shapes
       return ns;
     },
     bezier: (b, solver) => {
-
+      
     },
     arc: (a, solver) => {
       console.log("arcs can not be cloned because they rely on a hidden constraint")

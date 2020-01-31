@@ -18,15 +18,13 @@ const lmM = (lambda, lambdaUp, lambdaDown, epsilon, eqs, variables) => {
     return variables
   }
 
+
   let mT = jacobianM.trans();
   let hApprox = mT.dot(jacobianM);
   let weightedM = Matrix.scalar(hApprox.rows, lambda)
   let gM = hApprox.plus(weightedM);
 
-  // var t0 = performance.now();
   let costGradM = mT.dot(resM);
-  // var t1 = performance.now();
-  // console.log("Trial 2 took " + (t1 - t0) + " milliseconds.");
 
   let ans = numeric.solve(gM.toArray(), costGradM.toArray());
 

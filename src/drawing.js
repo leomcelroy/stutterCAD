@@ -54,7 +54,11 @@ class DrawArea extends React.Component {
       }
     })
 
+    // var t0 = performance.now();
     let satisfiedTemp = this.solver.solve() //solve updates vars in solver as well
+    // var t1 = performance.now();
+    // console.log(t1-t0, "ms")
+
     let satisfied = [];
     let count = 0;
 
@@ -366,7 +370,7 @@ class DrawArea extends React.Component {
     let newShapes = this.state.newShapes.map((shape, index) => shape.svgRender(`newShapes:${index}`));
     sortedShapes = sortedControlPoints.concat(sortedRest).concat(sortedClones).concat(newShapes);
 
-    console.log(sortedShapes);
+    // console.log(sortedShapes);
 
     let unsatisfiedConstraints = this.state.constraints.filter((c, index) => !this.state.satisfied[index])
 
