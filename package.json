@@ -26,6 +26,7 @@
     "sylvester": "0.0.21",
     "vectorious": "^4.8.2"
   },
+  "homepage" : "https://leomcelroy.com/stutterCAD",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
