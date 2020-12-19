@@ -7,6 +7,7 @@
     "ajv": "^6.5.2",
     "cwise": "^1.0.10",
     "esprima": "^4.0.0",
+    "gh-pages": "^3.1.0",
     "jsfeat": "0.0.8",
     "linear-algebra": "^3.1.4",
     "linear-solve": "^1.2.1",
@@ -26,8 +27,10 @@
     "sylvester": "0.0.21",
     "vectorious": "^4.8.2"
   },
-  "homepage" : "https://leomcelroy.com/stutterCAD",
+  "homepage": "https://leomcelroy.com/stutterCAD",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
