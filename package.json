@@ -20,7 +20,7 @@
     "numericjs": "^1.2.6",
     "numjs": "^0.16.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react-dom": "^16.2.1",
     "react-scripts": "^1.1.4",
     "react-svg-pan-zoom": "^2.16.1",
     "svg-pan-zoom": "^3.5.3",
